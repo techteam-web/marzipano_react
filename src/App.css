@@ -3,7 +3,7 @@
 /* ------------------- Compass ------------------- */
 @font-face {
   font-family: "Gotham-Office";
-  src: url("./GothamOffice-Regular.otf");
+  src: url("./assets/GothamOffice-Regular.otf");
 }
 #compassContainer {
   position: fixed;
