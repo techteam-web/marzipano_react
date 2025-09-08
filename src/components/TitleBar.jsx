@@ -3,6 +3,7 @@ function TitleBar(){
     return (
         <div id="titleBar">
         <h1 className="sceneName" />
+       
       
       <a href="javascript:void(0)" id="autorotateToggle">
         <img className="icon off" src="img/play.png" />

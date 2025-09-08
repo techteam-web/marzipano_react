@@ -9,6 +9,8 @@ import { useMarzipanoViewer } from "./hooks/useMarzipanoViewer";
 import { useAutorotate } from "./hooks/useAutorotate";
 import { useFullscreen } from "./hooks/useFullscreen";
 import { useFloorAndTimeControls } from "./hooks/useFloorAndTimeControls";
+import Navbar from './components/Navbar';
+
 function App() {
    const { viewer, scenes, currentView, switchScene } = useMarzipanoViewer();
    const { currentFloor, currentTime, changeFloor, changeTime } =
@@ -23,6 +25,9 @@ function App() {
       currentSceneId={currentView?.scene?.data?.id} 
       onSelect={switchScene}/>
       <FloorsPanel current={currentFloor} onSelect={changeFloor} />
+      
+      
+   
       <TitleBar/>
       <TimeButtons current={currentTime} onSelect={changeTime} />
      {currentView ? <Compass view={currentView} /> : null}
